@@ -1,25 +1,25 @@
 class PanprotoCli < Formula
   desc "Schematic version control CLI for panproto"
   homepage "https://github.com/panproto/panproto"
-  version "0.27.2"
+  version "0.27.3"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/panproto/panproto/releases/download/v0.27.2/panproto-cli-aarch64-apple-darwin.tar.xz"
-      sha256 "a39d32f81a6de1add2930101504668bb4023d4d7d574b553c84310d266ba104e"
+      url "https://github.com/panproto/panproto/releases/download/v0.27.3/panproto-cli-aarch64-apple-darwin.tar.xz"
+      sha256 "86fdbb33be27a84fcac40238e71080695f3d9720010881d0d6275dc7cdf0bedb"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/panproto/panproto/releases/download/v0.27.2/panproto-cli-x86_64-apple-darwin.tar.xz"
-      sha256 "522f0e19d76c8b5813a9bb18ff1dcaded4f70a7256bc090f4ecab6db6b03c1f2"
+      url "https://github.com/panproto/panproto/releases/download/v0.27.3/panproto-cli-x86_64-apple-darwin.tar.xz"
+      sha256 "8362787d9d97f7403b96fa07abf42e27c524c80cd58b5fe8fd4d9bb4b3ff819a"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/panproto/panproto/releases/download/v0.27.2/panproto-cli-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "8ef8c97f9e29ac3726b44d1e8b95884227c9c0f1e85016e699d833e5c76a0122"
+      url "https://github.com/panproto/panproto/releases/download/v0.27.3/panproto-cli-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "482aa2b26b0f9869f2015ddb4ea9ba9babb3c09e16b3ff4f741a6af1cf4ff2a9"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/panproto/panproto/releases/download/v0.27.2/panproto-cli-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "bf0324901898a265adff9eca5c144becfa5912a871d6aa44515b95debe85bee3"
+      url "https://github.com/panproto/panproto/releases/download/v0.27.3/panproto-cli-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "42e67b716123fe04da644dcd974fd2635218242ceee294c027b9c185252f8135"
     end
   end
   license "MIT"
