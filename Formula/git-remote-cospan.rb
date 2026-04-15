@@ -1,25 +1,25 @@
 class GitRemoteCospan < Formula
   desc "Git remote helper for cospan:// URLs (enables git push/pull/clone via panproto)"
   homepage "https://github.com/panproto/panproto"
-  version "0.30.1"
+  version "0.31.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/panproto/panproto/releases/download/v0.30.1/git-remote-cospan-aarch64-apple-darwin.tar.xz"
-      sha256 "2fa6c667f4af78fb0ba36ba7bb994a2d7b06f1eddf4031667baff76b7ba3e468"
+      url "https://github.com/panproto/panproto/releases/download/v0.31.0/git-remote-cospan-aarch64-apple-darwin.tar.xz"
+      sha256 "3620231a575009c510f9a663346b684269abacc031d2485faf9c5be5f68db7c5"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/panproto/panproto/releases/download/v0.30.1/git-remote-cospan-x86_64-apple-darwin.tar.xz"
-      sha256 "31f8aab88900e6dd41efc8380556c2a609ca5e55fc88162f686dd82978a99100"
+      url "https://github.com/panproto/panproto/releases/download/v0.31.0/git-remote-cospan-x86_64-apple-darwin.tar.xz"
+      sha256 "96305146bf60f52b7689aac4ab3e91ae3d787ab2174cd287ba77f04c8d9bb7a4"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/panproto/panproto/releases/download/v0.30.1/git-remote-cospan-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "3895252f4d6e50a641b5a87116fda5c29be4e784c5e56d863d6742da9921d872"
+      url "https://github.com/panproto/panproto/releases/download/v0.31.0/git-remote-cospan-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "984211f311e5c3024c38b506c746399919a5d757dc9673a44f50eed9ef908802"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/panproto/panproto/releases/download/v0.30.1/git-remote-cospan-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "9b5a7923dcf3b9c11e22c2d979d708d73f0d4d5efc74d6975eaca6534df2accc"
+      url "https://github.com/panproto/panproto/releases/download/v0.31.0/git-remote-cospan-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "e288db0554bf0f38026475490b779471a018780a25d8096892c76b83d3ad2cef"
     end
   end
   license "MIT"
