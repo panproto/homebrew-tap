@@ -1,25 +1,25 @@
 class PanprotoRepl < Formula
   desc "Interactive REPL for panproto theories, terms, and morphisms."
   homepage "https://github.com/panproto/panproto"
-  version "0.39.0"
+  version "0.40.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/panproto/panproto/releases/download/v0.39.0/panproto-repl-aarch64-apple-darwin.tar.xz"
-      sha256 "276b69a6377017b1702d329428edeae59b2a77b83115d4be5415be21c5c609be"
+      url "https://github.com/panproto/panproto/releases/download/v0.40.0/panproto-repl-aarch64-apple-darwin.tar.xz"
+      sha256 "08a676745b14a4c4ac06e85be8433869d30704451df935ad75d37a013f97f8ed"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/panproto/panproto/releases/download/v0.39.0/panproto-repl-x86_64-apple-darwin.tar.xz"
-      sha256 "1017ce7ec671a31df378fdee92f960bf7de728eaf9a49af42e3c5cf99774d80d"
+      url "https://github.com/panproto/panproto/releases/download/v0.40.0/panproto-repl-x86_64-apple-darwin.tar.xz"
+      sha256 "e4c64da3e39bd00eeeec820169832aa796298b2beed0fab3a52bc81a23aa202d"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/panproto/panproto/releases/download/v0.39.0/panproto-repl-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "798f8d9a094dcaf98ee60a1bc5cfa02f61595533d225682130eaac284456f99b"
+      url "https://github.com/panproto/panproto/releases/download/v0.40.0/panproto-repl-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "4160fe563daf95e50637299b25e0bfed0f8a7ecb7412b34763d8d0e1d1ed3964"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/panproto/panproto/releases/download/v0.39.0/panproto-repl-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "6983658d35c4d7ee9cb3d1b4b23157f823bbe0c05667af2b7f157bab75c235b8"
+      url "https://github.com/panproto/panproto/releases/download/v0.40.0/panproto-repl-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "84c9f9f6898257a4281122ee86ac6c0d635937d31a90bb2cb89acfff9d4f35dd"
     end
   end
   license "MIT"
