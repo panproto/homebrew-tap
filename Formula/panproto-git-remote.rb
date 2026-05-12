@@ -1,25 +1,25 @@
 class PanprotoGitRemote < Formula
   desc "Git remote helper for panproto:// URLs (enables git push/pull/clone via panproto)"
   homepage "https://github.com/panproto/panproto"
-  version "0.47.0"
+  version "0.47.1"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/panproto/panproto/releases/download/v0.47.0/panproto-git-remote-aarch64-apple-darwin.tar.xz"
-      sha256 "967ea02fdc1e558959212042929efbffd15b90d0f7ac1a65c7e288b0523cb6ab"
+      url "https://github.com/panproto/panproto/releases/download/v0.47.1/panproto-git-remote-aarch64-apple-darwin.tar.xz"
+      sha256 "3c3273bdaa21cbd4009475088a93ef5d138e3bd129c8977e24219d95d2f29f2a"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/panproto/panproto/releases/download/v0.47.0/panproto-git-remote-x86_64-apple-darwin.tar.xz"
-      sha256 "d85d0c3ff4d9f008bd2eb6cbddaa4b6d2fd8ace00a3c0f114a58e987ee43161b"
+      url "https://github.com/panproto/panproto/releases/download/v0.47.1/panproto-git-remote-x86_64-apple-darwin.tar.xz"
+      sha256 "c2b6a90ad98879b8b712be25a95f62f4d196ffb806ce56ca110a1bbb78f404a7"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/panproto/panproto/releases/download/v0.47.0/panproto-git-remote-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "edf9a249a60c652b9e5ef6d2b4b81d419c27ddc4c42a1c1fdc55a59bddf86fe9"
+      url "https://github.com/panproto/panproto/releases/download/v0.47.1/panproto-git-remote-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "30d927e9e0bceb19b6fee323090eebb4eeea7c91351f42cd6823f695ec3a5928"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/panproto/panproto/releases/download/v0.47.0/panproto-git-remote-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "0295aa377d37f92e40533eeca54da8fa6ca4ffc7404a2b373df1e43693d3affc"
+      url "https://github.com/panproto/panproto/releases/download/v0.47.1/panproto-git-remote-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "7a7c5aa68efc69e86c95a7bcb76dcf63365502461459822a05053134cc760f4d"
     end
   end
   license "MIT"
