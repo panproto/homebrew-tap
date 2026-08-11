@@ -1,25 +1,25 @@
 class PanprotoCli < Formula
   desc "Schematic version control CLI for panproto"
   homepage "https://github.com/panproto/panproto"
-  version "0.69.0"
+  version "0.69.1"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/panproto/panproto/releases/download/v0.69.0/panproto-cli-aarch64-apple-darwin.tar.xz"
-      sha256 "65ac106e78a24e4227c34109c14bb0c40ac8cc297736fa82e8ab7d7663178166"
+      url "https://github.com/panproto/panproto/releases/download/v0.69.1/panproto-cli-aarch64-apple-darwin.tar.xz"
+      sha256 "c69824b400021a1a240a69381bda0d3fb3766638146a9fb71ede7e362ed1aab1"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/panproto/panproto/releases/download/v0.69.0/panproto-cli-x86_64-apple-darwin.tar.xz"
-      sha256 "32add34712b47e378e8292978e583b9762e05dbeba43fa4e2fe6a563e7fb3880"
+      url "https://github.com/panproto/panproto/releases/download/v0.69.1/panproto-cli-x86_64-apple-darwin.tar.xz"
+      sha256 "764de1f21008402e765eec238c4fec55cb0f910f3b2b4d6efc5967524c26f692"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/panproto/panproto/releases/download/v0.69.0/panproto-cli-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "c20a075c0bdfa16809fc8b3fc692249e6f5adfb24d00c4c35b55db8de7dc89ed"
+      url "https://github.com/panproto/panproto/releases/download/v0.69.1/panproto-cli-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "7922d7a8fc608b8d365a41e70c7578131ad748b04e67e5c0104b5f0d24bec011"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/panproto/panproto/releases/download/v0.69.0/panproto-cli-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "fe397eafc19d1882d9e3828727bf8d05a63f42f0ab4610c1a891f5abce018902"
+      url "https://github.com/panproto/panproto/releases/download/v0.69.1/panproto-cli-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "ad8becd3a101e975c2a287d40e146b278fd80f3cde7e7616d2701f7847873f89"
     end
   end
   license "MIT"
@@ -52,10 +52,18 @@ class PanprotoCli < Formula
   end
 
   def install
-    bin.install "schema" if OS.mac? && Hardware::CPU.arm?
-    bin.install "schema" if OS.mac? && Hardware::CPU.intel?
-    bin.install "schema" if OS.linux? && Hardware::CPU.arm?
-    bin.install "schema" if OS.linux? && Hardware::CPU.intel?
+    if OS.mac? && Hardware::CPU.arm?
+      bin.install "schema"
+    end
+    if OS.mac? && Hardware::CPU.intel?
+      bin.install "schema"
+    end
+    if OS.linux? && Hardware::CPU.arm?
+      bin.install "schema"
+    end
+    if OS.linux? && Hardware::CPU.intel?
+      bin.install "schema"
+    end
 
     install_binary_aliases!
 
