@@ -1,25 +1,25 @@
 class PanprotoGitRemote < Formula
   desc "Git remote helper for panproto:// URLs (enables git push/pull/clone via panproto)"
   homepage "https://panproto.dev"
-  version "0.77.0"
+  version "0.78.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/panproto/panproto/releases/download/v0.77.0/panproto-git-remote-aarch64-apple-darwin.tar.xz"
-      sha256 "edaf6ac4a9480de59afda63b06fa776c73f6eef9d17570fa290d9d81d5cb23b6"
+      url "https://github.com/panproto/panproto/releases/download/v0.78.0/panproto-git-remote-aarch64-apple-darwin.tar.xz"
+      sha256 "14b407abd30788736d2c8e2265368e7653562617fd0a73bf3af21cddc559b624"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/panproto/panproto/releases/download/v0.77.0/panproto-git-remote-x86_64-apple-darwin.tar.xz"
-      sha256 "8751c585a67d66d89a60baca210cf146a82063c48b54b6aa37272c1ebc0af515"
+      url "https://github.com/panproto/panproto/releases/download/v0.78.0/panproto-git-remote-x86_64-apple-darwin.tar.xz"
+      sha256 "b0694ec0ac3adf7b84dd2e72b450ad05baf62187627649a6ac3951173dfeb2a7"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/panproto/panproto/releases/download/v0.77.0/panproto-git-remote-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "530ead6dc32b67111f4376414858f17615e7fbd470cf6d2497aab41b86923ae5"
+      url "https://github.com/panproto/panproto/releases/download/v0.78.0/panproto-git-remote-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "2717d1f738aaebfafdce4d91baf5ffc5ffe96e20595c0b391080e22362626072"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/panproto/panproto/releases/download/v0.77.0/panproto-git-remote-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "d6e248f4ceafff8431c42cb708d0b0e96149028932c22583eae52715cd91c30e"
+      url "https://github.com/panproto/panproto/releases/download/v0.78.0/panproto-git-remote-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "9cc8f1d079ed0ed08bc0e7230f387318c2fcd1edef933c0e4fd6119ac088f9a1"
     end
   end
   license "MIT"
